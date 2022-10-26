@@ -26,7 +26,7 @@ st.write(''' # *Resume* ''')
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir /"Rohan_Gurubhaiye_Resume.pdf"
-profile_pic = current_dir /"RG_round.PNG"
+profile_pic = current_dir /"RG_round.png"
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
